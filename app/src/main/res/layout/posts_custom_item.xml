@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/circle_border"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/circle"
+        app:srcCompat="@drawable/kitten"
+        app:strokeColor="#D61F44"
+        app:strokeWidth="1.5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_phoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toEndOf="@+id/circle_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:layout_marginLeft="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_toc_24"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/item"
+            android:id="@+id/im_item"
+            android:src="@drawable/masjid"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="top"
+                android:src="@drawable/ic_baseline_comment_24"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:layout_marginRight="75dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="comment"
+                android:gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_baseline_thumb_up_24"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="like"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
